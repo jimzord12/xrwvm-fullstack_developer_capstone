@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="stylesheet" href="/static/bootstrap.min.css" />
+
+    <style>
+      .contact-card {
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        padding: 20px;
+      }
+      .divider {
+        border-left: 1px solid #ddd;
+        height: 100%;
+      }
+      .contact-icon {
+        font-size: 5rem;
+        color: #00c4cc;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: darkturquoise; height: 1in"
+    >
+      <div class="container-fluid">
+        <h2 style="padding-right: 5%">Dealerships</h2>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                style="font-size: larger"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: larger" href="/about"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active fw-bold"
+                style="font-size: larger"
+                href="/contact"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <div class="loginlink" id="loginlogout"></div>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container py-5">
+      <div class="card contact-card">
+        <div class="row g-0">
+          <div class="col-md-12 text-center mb-4">
+            <img
+              src="https://gtspiritmedia.com/gtspirit/uploads/2015/06/f5389-the-best-collection-of-seven-car-lounge-03.jpg"
+              class="img-fluid"
+              alt="Car Warehouse"
+            />
+          </div>
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center flex-column-reverse"
+          >
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAcnIkerJEvJd82vtrxnxlp5EwCGR1c4za_g&s"
+              class="img-fluid"
+              alt="Customer Service"
+            />
+          </div>
+          <div class="col-md-1 d-flex">
+            <div class="divider"></div>
+          </div>
+          <div class="col-md-5">
+            <h6><strong>Contact Customer Service</strong></h6>
+            <p>support@bestcars.com</p>
+
+            <h6><strong>Contact our National Advertising team</strong></h6>
+            <p>NationalSales@bestcars.com</p>
+
+            <h6><strong>Contact our Public Relations team</strong></h6>
+            <p>PR@bestcars.com</p>
+
+            <h6><strong>Contact the bestcars.com offices</strong></h6>
+            <p>312-611-1111</p>
+
+            <h6><strong>Become a bestcars.com car dealer</strong></h6>
+            <p><a href="#">Visit growwithbestcars.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
