@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/static/style.css" />
-    <link rel="stylesheet" href="/static/bootstrap.min.css" />
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <style>
       .contact-card {
         border-radius: 15px;
@@ -22,50 +30,34 @@
     </style>
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-light"
-      style="background-color: darkturquoise; height: 1in"
-    >
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
       <div class="container-fluid">
-        <h2 style="padding-right: 5%">Dealerships</h2>
+        <h2 class="navbar-brand">Dealerships</h2>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
+        <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a
-                class="nav-link"
-                style="font-size: larger"
-                aria-current="page"
-                href="#"
-                >Home</a
-              >
+              <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" style="font-size: larger" href="/about"
-                >About Us</a
-              >
+              <a class="nav-link" href="/about">About Us</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link active fw-bold"
-                style="font-size: larger"
-                href="/contact"
-                >Contact Us</a
-              >
+              <a class="nav-link active fw-bold" href="/contact">Contact Us</a>
             </li>
           </ul>
           <span class="navbar-text">
-            <div class="loginlink" id="loginlogout"></div>
+            <div id="loginlogout"></div>
           </span>
         </div>
       </div>
@@ -112,5 +104,7 @@
         </div>
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
