@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "IBM-Capstone",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
