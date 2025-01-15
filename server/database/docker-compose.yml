@@ -1,10 +1,8 @@
-version: '3.9'
-
 services:
   # Mongodb service
   mongo_db:
     container_name: db_container
-    image: mongo:latest
+    image: mongo
     ports:
       - 27017:27017
     restart: always
@@ -13,11 +11,14 @@ services:
 
   # Node api service
   api:
+    build: .
     image: nodeapp
     ports:
       - 3030:3030
-    depends_on: 
+    depends_on:
       - mongo_db
+    environment:
+      - NODE_ENV=container
 
 volumes:
   mongo_data: {}

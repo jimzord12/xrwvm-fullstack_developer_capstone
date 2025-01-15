@@ -13,9 +13,16 @@ const dealerships_data = JSON.parse(
   fs.readFileSync("data/dealerships.json", "utf8")
 );
 
-// mongoose.connect("mongodb://mongo_db:27017/", { dbName: "dealershipsDB" });
-// ⚠️ I AM RUNNING MONGO LOCALLY (FROM CONTAINER)
-mongoose.connect("mongodb://localhost:27017/", { dbName: "dealershipsDB" });
+console.log("Connecting to MongoDB...");
+console.log("NODE_ENV: ", process.env.NODE_ENV);
+if (process.env.NODE_ENV === "container") {
+  console.log("Envinronment: Docker");
+  mongoose.connect("mongodb://mongo_db:27017/", { dbName: "dealershipsDB" });
+} else {
+  console.log("Envinronment: Not Docker");
+  // ⚠️ I AM RUNNING MONGO LOCALLY (FROM CONTAINER)
+  mongoose.connect("mongodb://localhost:27017/", { dbName: "dealershipsDB" });
+}
 
 const Reviews = require("./review"); // The model for the reviews
 
